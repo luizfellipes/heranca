@@ -2,12 +2,7 @@ package org.example;
 
 public class Funcionario extends Pessoa{
     private String setor;
-    private String trabalhando;
-
-    public Funcionario(String setor, String trabalhando) {
-        this.setor = setor;
-        this.trabalhando = trabalhando;
-    }
+    private boolean trabalhando;
 
     public String getSetor() {
         return setor;
@@ -17,15 +12,16 @@ public class Funcionario extends Pessoa{
         this.setor = setor;
     }
 
-    public String getTrabalhando() {
+    public boolean getTrabalhando() {
         return trabalhando;
     }
 
-    public void setTrabalhando(String trabalhando) {
+    public void setTrabalhando(boolean trabalhando) {
         this.trabalhando = trabalhando;
     }
 
     public void mudarTrabalho(){
-
+        this.trabalhando = ! trabalhando;
     }
+
 }

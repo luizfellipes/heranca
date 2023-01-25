@@ -1,17 +1,9 @@
 package org.example;
 
-public class Aluno extends Pessoa{
+public class Aluno extends Pessoa {
     private int matricula;
     private String curso;
 
-    public Aluno(String nome, int idade, String sexo) {
-        super(nome, idade, sexo);
-    }
-
-    public Aluno(int matricula, String curso) {
-        this.matricula = matricula;
-        this.curso = curso;
-    }
 
     public int getMatricula() {
         return matricula;
@@ -29,7 +21,7 @@ public class Aluno extends Pessoa{
         this.curso = curso;
     }
 
-    public void cancelarMatricula(){
-        this.matricula--;
+    public void cancelarMatricula() {
+        System.out.println("Matrícula será cancelada");
     }
 }
