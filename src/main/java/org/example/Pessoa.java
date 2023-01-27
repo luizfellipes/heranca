@@ -1,6 +1,6 @@
 package org.example;
 
-public class Pessoa {
+abstract class Pessoa {
     private String nome;
     private int idade;
     private String sexo;
@@ -38,7 +38,7 @@ public class Pessoa {
                 '}';
     }
 
-    public void fazerAniversario() {
+    public final void fazerAniversario() {
         this.idade++;
     }
 }

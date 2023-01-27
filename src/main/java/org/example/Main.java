@@ -3,28 +3,34 @@ package org.example;
 public class Main {
     public static void main(String[] args) {
 
-        Pessoa pessoa = new Pessoa();
+
         Aluno aluno = new Aluno();
         Professor professor = new Professor();
         Funcionario funcionario = new Funcionario();
+        Visitante visitante = new Visitante();
+        Bolsista bolsista = new Bolsista();
 
-        pessoa.setNome("Pedro");
+
         aluno.setNome("Maria");
-        professor.setNome("Cláudio");
-        funcionario.setNome("Fabiana");
-
-        pessoa.setSexo("M");
-        funcionario.setSexo("F");
-        aluno.setIdade(18);
-
         aluno.setCurso("Informática");
-        professor.setSalario(2500.75f);
-        funcionario.setSetor("Estoque");
-
-        System.out.println(pessoa.toString());
+        aluno.setMatricula(1111);
+        aluno.setIdade(18);
+        aluno.setSexo("M");
+        aluno.pagarMensalidade();
         System.out.println(aluno.toString());
-        System.out.println(professor.toString());
-        System.out.println(funcionario.toString());
+
+
+        bolsista.setMatricula(1212);
+        bolsista.setNome("Jubileu");
+        bolsista.setBolsa(12.5f);
+        bolsista.setSexo("M");
+        bolsista.setIdade(22);
+        bolsista.pagarMensalidade();
+        System.out.println(bolsista.toString());
+
+
+
+
 
     }
 }
